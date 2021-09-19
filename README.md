@@ -44,5 +44,27 @@ For i = dataRowStart to dataRowEnd
 
 Next i 
 ```
+The resulting table for 2017 stock data showed that index TERP was the least successful with a -7.2% return, while all other stocks had a positive return. However, 2018 had only two stocks, ENPH and RUN, reporting positive returns, with ENPH also having the highest total daily volume. 
 
+![2017 Green Stock Data](https://github.com/msprech/stock-analysis/blob/92915fd4e6a5566394bb276de70ae3fbbccbc8ec/Resources/Screen%20Shot%202021-09-19%20at%209.07.38%20AM.png)
 
+![2018 Green Stock Data](https://github.com/msprech/stock-analysis/blob/92915fd4e6a5566394bb276de70ae3fbbccbc8ec/Resources/Screen%20Shot%202021-09-19%20at%209.07.54%20AM.png)
+
+## Summary 
+
+### Advantages and Disadvantages of Refactoring Code 
+
+Refactoring can both simplify and clean up complicated and difficult to read code. It is a process that provides further opportunity to debug and catch errors in existing code. It can also improve run time and illuminate useful patterns in the macros. 
+
+However, it can also be time-consuming for large data sets, and increases the risk of introducing more errors or breaking code if you aren't keeping close track of what each section of code does. Although refactored code can address many issues that come with coding and analyzing data, it is also very important to use comments and replace as many hardcoded values as possible in order to stay organized. 
+
+### Refactoring the VBA Stock Analysis Script 
+
+The run time for the green stock analysis script was vastly improved by refactoring the code. The initial code ran in close to .3 seconds, while the refactored code was closer to .08 seconds as shown below.  
+
+![2017 run time](https://github.com/msprech/stock-analysis/blob/92915fd4e6a5566394bb276de70ae3fbbccbc8ec/Resources/VBA_Challenge_2017.png)
+![2018 run time](https://github.com/msprech/stock-analysis/blob/92915fd4e6a5566394bb276de70ae3fbbccbc8ec/Resources/VBA_Challenge_2018.png)
+
+By adding an InputBox() value that asked for a specific year of desired analysis, the refactored code also allowed further flexibility and applied to a much wider range of stocks, as opposed to only the year of 2018. There was also a reduced risk of accidents and errors in looping through the data a single time and keeping the calculations concise. 
+
+However, with an increase amount of data, I did run into the overflow error on VBA, and it was also more difficult to keep track of all of the different loops and conditionals. Including comments was necessary to ensure in particular that all declared variables were where they would work best.  
