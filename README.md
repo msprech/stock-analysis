@@ -1,6 +1,6 @@
 # Analyzing Green Stocks Through VBA
 
-## Purpose of Analysis 
+## Overview of the Project
 
 In order to provide insight into possible prosperous green energy stocks for the client, I analyzed a variety of stocks using the metrics of total yearly volume and return on stocks. The client's prior interest was in the DAQO New Energy Corp, which was shown through initial analysis to have dropped by 63% in 2018. We then needed to widen the scope of our analysis to include both 2017 and 2018 as well as a much wider dataset of stocks. 
 
@@ -67,4 +67,4 @@ The run time for the green stock analysis script was vastly improved by refactor
 
 By adding an InputBox() value that asked for a specific year of desired analysis, the refactored code also allowed further flexibility and applied to a much wider range of stocks, as opposed to only the year of 2018. There was also a reduced risk of accidents and errors in looping through the data a single time and keeping the calculations concise. 
 
-However, with an increase amount of data, I did run into the overflow error on VBA, and it was also more difficult to keep track of all of the different loops and conditionals. Including comments was necessary to ensure in particular that all declared variables were where they would work best.  
+However, with an increased amount of data, I did run into the overflow error on VBA, and it was also more difficult to keep track of all of the different loops and conditionals. Including comments was necessary to ensure in particular that all declared variables were where they would work best.  
